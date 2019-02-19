@@ -1,0 +1,41 @@
+package hotelmanagement3;
+
+// in this class we have built objects that allow checkin dates to be recorded for every guest and for every room number
+
+//Ahmad Saadat 4/23/2017
+
+import java.util.Calendar;
+import java.util.Date;
+
+
+// new array created to extend the data block
+
+public class Checkin {
+
+	Date date = new Date();
+	Calendar calendar = Calendar.getInstance(); 
+	
+	
+	 public static String[] fName  = new String[18];
+	 public static String[] lName = new String[18];
+	 public static String[] CheckInDate = new String[18];
+	 public static int[] CheckInDay = new int[18];
+
+	  
+	  
+	  
+	  
+
+	  // sets relevant dates whenever check in occurs
+	  
+	  public void setDate(int roomNumber){
+		  
+		  Checkin.CheckInDate[roomNumber] = calendar.getTime().toString();
+		  Checkin.CheckInDay[roomNumber] = calendar.get(Calendar.DAY_OF_YEAR);
+		  
+	  }
+	  
+	  
+	
+
+}

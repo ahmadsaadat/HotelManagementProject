@@ -1,0 +1,52 @@
+package hotelmanagement3;
+
+import java.util.Scanner;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.io.PrintWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+
+/* the main method is intended to be where the program is initiated, it acts as a joint for all the classes of the program */
+
+//Ahmad Saadat, Michael Wagener, Ehsan Javaid, Michael Ryan 4/23/2017
+
+
+public class Main {
+
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		// txt files
+		File file1 = new File("History.txt");
+		PrintWriter history = new PrintWriter(file1);
+		
+		File file2 = new File("Report.txt");
+		PrintWriter report = new PrintWriter(file2);
+
+
+
+		Scanner in = new Scanner(System.in);
+
+		
+		
+		
+		// Constructors
+		
+		Array array = new Array();
+		Checkin checkin = new Checkin();
+		Checkout checkout = new Checkout();
+		Bills bills = new Bills();
+		Cleaning cleaning = new Cleaning();
+
+		
+		// Date
+		Date date = new Date();
+		Calendar calendar = Calendar.getInstance(); 
+		
+ int z = 99;
+		

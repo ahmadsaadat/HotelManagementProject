@@ -1,0 +1,35 @@
+package hotelmanagement3;
+
+import java.util.Calendar;
+import java.util.Date;
+
+// the checkout class calculates how many days the room has stayed in real time
+
+//Ahmad Saadat 4/23/2017
+
+
+public class Checkout {
+
+	Date date = new Date();
+	Calendar calendar = Calendar.getInstance(); 
+	
+	
+	
+	// calculates how many days the guest has stayed over
+	
+	 public int getTotalDays(int roomNumber){
+		
+
+		 
+	// once you check in the guest is charged with a days stay. hence the +1 addition to the equation
+		 
+		 int TotalDays = calendar.get(Calendar.DAY_OF_YEAR) - Checkin.CheckInDay[roomNumber] + 1;
+		 
+		 return TotalDays;
+
+	 }
+	
+	
+	
+	
+}

@@ -1,0 +1,42 @@
+package hotelmanagement3;
+
+// this is the class where the customer bill is calculated
+
+//Ahmad Saadat 4/23/2017
+
+
+public class Bills {
+
+	
+	private double stateTax = 0.06;
+	
+	
+// to calculate the total before tax, hotel charges only
+public double totalBeforeTax(int roomRate, int days){
+	
+	double totalBeforeTax = roomRate * days;
+	return totalBeforeTax;
+}
+
+
+// to calculate the total tax payable according to iowa state law
+public double getTax(double totalBeforeTax){
+	
+	
+	double totalTax = totalBeforeTax * stateTax;
+	
+	return totalTax;
+	
+}
+
+// the addition of tax and hotel charges
+
+public double getTotalAfterTax(double totalBeforeTax, double totalTax){
+	
+	
+	double getTotalAfterTax = totalBeforeTax + totalTax;
+	
+	return getTotalAfterTax;
+}
+
+}

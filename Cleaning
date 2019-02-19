@@ -1,0 +1,36 @@
+
+package hotelmanagement3;
+    
+//Ahmad Saadat 4/23/2017
+
+
+public class Cleaning {
+
+
+	public static String[] cleaning = new String[18];
+	
+	
+	
+	
+	// instigated when guests checkout to signal cleaning
+	
+	public void setCleaning(int a){
+		
+		
+		
+		Cleaning.cleaning[a] = "Cleaning Needed";
+		
+		
+	}
+	
+	// instigated manually after cleanup is done
+	
+	public void setClean(int a){
+		
+		
+		Cleaning.cleaning[a] = null;
+		
+		
+		
+	}    
+}
